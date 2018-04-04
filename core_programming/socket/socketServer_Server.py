@@ -10,9 +10,9 @@ ADDR = (HOST,PORT)
 class MyRequestHandle(SRH):
     def handle(self):
         print('...connect from: ' , self.client_address)
+        #self.wfile.write(self.rfile.readline())
+        
         self.wfile.write(self.rfile.readline())
-        self.wfile.write('aaaaaaa')
-
 
 tcsServer = TCP(ADDR,MyRequestHandle)
 print('... wait connect ')
