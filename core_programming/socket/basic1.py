@@ -5,7 +5,7 @@ import socket
 from time import ctime
 
 HOST = ''
-PORT = 36000
+PORT = 6000
 BUFFSIZE = 1024
 ADDR = (HOST,PORT)
 
